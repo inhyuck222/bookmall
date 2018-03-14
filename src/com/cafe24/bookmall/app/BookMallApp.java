@@ -22,7 +22,7 @@ public class BookMallApp {
 	public static void insertAllData() {
 		CategoryDaoTest.insertTest(new CategoryVo(1, "computer"));
 		CategoryDaoTest.insertTest(new CategoryVo(2, "comic"));
-		
+
 		BookDaoTest.insertTest(new BookVo(1, "진격의거인", 5000, 2));
 		BookDaoTest.insertTest(new BookVo(2, "원피스", 5000, 2));
 		BookDaoTest.insertTest(new BookVo(3, "java", 5000, 1));
@@ -38,24 +38,24 @@ public class BookMallApp {
 		CartDaoTest.insertTest(new CartVo(2, 2, 2));
 		CartDaoTest.insertTest(new CartVo(3, 1, 1));
 	}
-	
+
 	public static void selectAllData() {
 		System.out.println("===Member============================================================");
 		MemberDaoTest.selectTest();
 		System.out.println();
-		
+
 		System.out.println("===Cart============================================================");
 		CartDaoTest.selectTest();
 		System.out.println();
-		
+
 		System.out.println("===Book============================================================");
 		BookDaoTest.selectTest();
 		System.out.println();
-		
+
 		System.out.println("===Order============================================================");
 		OrderDaoTest.selectOrderTest();
 		System.out.println();
-		
+
 		System.out.println("===OrderBook============================================================");
 		OrderDaoTest.selectOrderBookTest();
 		System.out.println();
